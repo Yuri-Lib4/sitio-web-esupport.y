@@ -15,6 +15,8 @@ else
     echo "El archivo requirements.txt no se encontró en la ubicación especificada."
     exit 1
 fi
+# Elimina todas las migraciones de la base de datos
+python manage.py migrate esupport zero
 
 python manage.py collectstatic --no-input
 
