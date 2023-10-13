@@ -45,7 +45,7 @@ class Producto(models.Model):
     categoria = models.ForeignKey(CategoriaProducto, on_delete=models.CASCADE)
     nombre = models.CharField(max_length=200)
     descripcion = models.TextField()
-    marca = models.ForeignKey(MarcaProducto, on_delete=models.CASCADE)
+    marca = models.ForeignKey(MarcaProducto, on_delete=models.CASCADE, default=1)
     precio = models.DecimalField(max_digits=10, decimal_places=2)
     stock = models.PositiveIntegerField()
     imagen = models.ImageField(upload_to='productos/', blank=True, null=True)
