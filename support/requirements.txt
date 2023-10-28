@@ -19,4 +19,4 @@ tzdata==2023.3
 whitenoise==6.5.0
 
 
-
+-e ./esupport
