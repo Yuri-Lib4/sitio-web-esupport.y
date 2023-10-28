@@ -17,7 +17,11 @@ else
 fi
 
 rm db.sqlite3
-rm -r esupport/migrations
+if [ -d "esupport/migrations" ]; then
+    rm -r esupport/migrations
+else
+    echo "El directorio 'esupport/migrations' no existe."
+fi
 python manage.py collectstatic --no-input
 
 python manage.py migrate
