@@ -12,7 +12,7 @@ cd $RENDER_WORKING_DIR
 if [ -f "requirements.txt" ]; then
     pip install -r requirements.txt
 else
-    echo "El archivo requirements.txt no se encontró en la ubicación especificada."
+    echo "El archivo requirements.txt no se encontró en la ubicación especificada.."
     exit 1
 fi
 
