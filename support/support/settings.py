@@ -39,7 +39,7 @@ if RENDER_EXTERNAL_HOSTNAME:
 
 INSTALLED_APPS = [
     'rest_framework',
-    'esupport.apps.EsupportConfig',
+    'esupport',
     'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
