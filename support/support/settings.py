@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os
 import sys
 
-sys.path.append('support/esupport')
+sys.path.append('../support/esupport')
 
 from pathlib import Path
 import dj_database_url
@@ -42,7 +42,7 @@ if RENDER_EXTERNAL_HOSTNAME:
 
 INSTALLED_APPS = [
     'rest_framework',
-    'support.esupport.apps.EsupportConfig',
+    'esupport.apps.EsupportConfig',
     'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
