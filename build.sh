@@ -4,7 +4,7 @@ set -o errexit
 
 
 # Directorio de trabajo de Render
-RENDER_WORKING_DIR=supporte
+RENDER_WORKING_DIR=support
 
 # Cambia al directorio de trabajo de Render
 cd $RENDER_WORKING_DIR
