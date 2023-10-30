@@ -26,8 +26,12 @@ else
 fi
 
 
+# Elimina la base de datos y las migraciones
 rm db.sqlite3
 rm -r esupport/migrations
-python manage.py collectstatic --no-input
 
+# Genera las migraciones
+python manage.py makemigrations
+
+# Migra las migraciones
 python manage.py migrate
