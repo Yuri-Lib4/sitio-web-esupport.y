@@ -1,9 +1,2 @@
 apps:
 - esupport
-
-build:
-- chmod +x build.sh
-- ./build.sh
-
-start:
-- gunicorn support.wsgi:application -b 0.0.0.0:8000
