@@ -40,7 +40,6 @@ if RENDER_EXTERNAL_HOSTNAME:
 # Application definition
 
 INSTALLED_APPS = [
-    'esupport.apps.EsupportConfig',
     'rest_framework',
     'corsheaders',
     'django.contrib.admin',
@@ -49,6 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'esupport.apps.EsupportConfig',
 ]
 
 MIDDLEWARE = [
